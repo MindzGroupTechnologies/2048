@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Play 2048 Online</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="game-container">
+            <h1 id="game-title">2048</h1>
+            <div id="game-message">Please open this game on your pc as you can only control this with the help of the arrow keys on your keyboard.</div>
+            <div id="game-board">
+                <div id="game-grid">
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                    <div class="game-grid-cell"></div>
+                </div>
+                <div class="game-tile" id="game-tile">
+                </div>
+            </div>
+            <div id="game-actions">
+                <button id="btnReset">Start / Reset</button>
+            </div>
+        </div>
+    </div>
+    <script data-main="assets/js/common" src="assets/js/require.js"></script>
+    <script>
+        require(['common'], function () {
+            require(['Main']);
+        });
+    </script>
+</body>
+
+</html>
